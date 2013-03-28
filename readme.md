@@ -1,4 +1,4 @@
-# Ballistiq Software Development Guide
+# Ballistiq  Software Development Guide
 
 This guide provides information about how Ballistiq works and our recommended practices for software development.
 
@@ -32,6 +32,7 @@ Ballistiq uses Git for source control. All our projects are hosted on Github. Al
 
 The Master branch is expected to be the canonical stable source branch. As such, Master should always strive to be the branch where all tests pass and that the software is stable.
 
+# Web Development Guide
 
 ## Ruby on Rails
 
@@ -80,15 +81,6 @@ For monitoring, we use:
 * Rollbar - error reporting
 * Pagerduty - SMS when server/app is down
 
-## Equipment / Software
-
-Standard issue personal computer at Ballistiq is a Mac laptop.
-
-You should install the following tools:
-
-* Sublime Text Editor
-* Balsamiq Mockups
-
 ## Training
 
 ### Bootcamp / Basic Training
@@ -113,3 +105,7 @@ These training guides provided by Thoughtbot provide an excellent starting point
 * [Git](https://learn.thoughtbot.com/git)
 * [Unix](https://learn.thoughtbot.com/unix)
 * [Vim](https://learn.thoughtbot.com/vim)
+
+# Mobile Development Guide
+
+TODO
