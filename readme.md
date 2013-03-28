@@ -91,4 +91,25 @@ You should install the following tools:
 
 ## Training
 
-TODO
+### Bootcamp / Basic Training
+
+These training guides provided by Thoughtbot provide an excellent starting point for getting up to speed with everything.
+
+* [Design](https://learn.thoughtbot.com/design)
+* [Web Design](https://learn.thoughtbot.com/web+design)
+* [Typography](https://learn.thoughtbot.com/typography)
+* [CSS Grids](https://learn.thoughtbot.com/grids)
+* [Visual Principles](https://learn.thoughtbot.com/visual-principles)
+* [HTML & CSS](https://learn.thoughtbot.com/html-css)
+* [Javascript](https://learn.thoughtbot.com/javascript)
+* [SASS](https://learn.thoughtbot.com/sass)
+* [Ruby](https://learn.thoughtbot.com/ruby)
+* [Rails](https://learn.thoughtbot.com/rails)
+* [SQL](https://learn.thoughtbot.com/sql)
+* [Testing](https://learn.thoughtbot.com/test-driven+development)
+
+#### General
+
+* [Git](https://learn.thoughtbot.com/git)
+* [Unix](https://learn.thoughtbot.com/unix)
+* [Vim](https://learn.thoughtbot.com/vim)
