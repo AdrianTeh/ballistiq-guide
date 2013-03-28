@@ -35,12 +35,60 @@ The Master branch is expected to be the canonical stable source branch. As such,
 
 ## Ruby on Rails
 
+Web app development is in Ruby on Rails. Specific technologies we use in Rails are:
 
+* [Rspec](https://github.com/rspec/rspec-rails) for testing
+* [Factory Girl](https://github.com/thoughtbot/factory_girl) for test factories
+* [Paperclip](https://github.com/thoughtbot/paperclip) for files/attachment handling
+* [Capistrano](https://github.com/capistrano/capistrano) for deployment
+
+
+### Style Guide
+
+* Use 2 space indentation. Indent with spaces. Configure your text editor to do this.
+* Comment your code! Don't expect your code to be "so beautiful and readable" that people will understand it.
+
+### Front end
+Front end development technologies:
+
+* [Slim](http://slim-lang.com/)
+* [SCSS](http://sass-lang.com/)
+* [CoffeeScript](http://coffeescript.org/)
+
+
+## Servers
+
+We generally use Amazon EC2 for all our hosting needs. Technologies we use are:
+
+* Ubuntu 12.04 LTS
+* [RVM](https://rvm.io/) - Ruby version manager
+* Imagemagick for server side image manipulation
+* [Nginx](http://nginx.org/en/) web server
+* [Phusion Passenger Enterprise](https://www.phusionpassenger.com/)
+* Amazon S3 for file storage
+* Amazon Cloudfront for file delivery
+* Amazon RDS - Mysql cloud hosting
 
 ## Deployment
 
+Deployment of web apps should always be automated. For this, we use Capistrano.
+
 ## Monitoring
+
+For monitoring, we use:
+* New Relic - server performance/uptime monitoring
+* Rollbar - error reporting
+* Pagerduty - SMS when server/app is down
+
+## Equipment / Software
+
+Standard issue personal computer at Ballistiq is a Mac laptop.
+
+You should install the following tools:
+
+* Sublime Text Editor
+* Balsamiq Mockups
 
 ## Training
 
-## Equipment / Software
+TODO
