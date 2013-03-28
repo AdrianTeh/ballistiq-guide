@@ -25,7 +25,7 @@ Ballistiq uses Git for source control. All our projects are hosted on Github. Al
 3. When the task is completed, you should mark the task as "Finished" in Pivotal Tracker and also set it to "Deliver". 
 4. Get your code reviewed by a colleague. Do a pull request. 
 5. The reviewer should check the pull request. If it all looks good, just leave a comment saying, "LGTM" (Looks Good To Me) or similar.
-6. After review, the author should then do the merge into master. Rebase your commits Ensure that all tests run before pushing to Github. You should delete the local and remote temporary branch. 
+6. After review, the author should then do the merge into master. Rebase your commits  to squash them into one using `git rebase -i origin/master`. Ensure that all tests run before pushing to Github. You should delete the local and remote temporary branch. 
 7. The project lead will Accept/Reject the task on Pivotal Tracker as per client feedback.
 
 ### Master branch
