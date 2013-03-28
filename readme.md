@@ -22,10 +22,10 @@ Ballistiq uses Git for source control. All our projects are hosted on Github. Al
 
 1. Before starting work on a feature, you must set the corresponding task on Pivotal Tracker to "Started".
 2. The feature should be implemented in a separate git branch named as such: {your initials}-{task id}-{task description}. E.g. "LT-12345-add-comments-to-posts"
-3. When the task is completed, you should mark the task as "Finished" in Pivotal Tracker and also set it to "Deliver". 
-4. Get your code reviewed by a colleague. Do a pull request. 
+3. When the task is completed, you should mark the task as "Finished" in Pivotal Tracker and also set it to "Deliver".
+4. Get your code reviewed by a colleague. Do a pull request.
 5. The reviewer should check the pull request. If it all looks good, just leave a comment saying, "LGTM" (Looks Good To Me) or similar.
-6. After review, the author should then do the merge into master. Rebase your commits  to squash them into one using `git rebase -i origin/master`. Ensure that all tests run before pushing to Github. You should delete the local and remote temporary branch. 
+6. After review, the author should then do the merge into master. Rebase your commits  to squash them into one using `git rebase -i origin/master`. Ensure that all tests run before pushing to Github. You should delete the local and remote temporary branch.
 7. The project lead will Accept/Reject the task on Pivotal Tracker as per client feedback.
 
 ### Master branch
@@ -46,8 +46,11 @@ Web app development is in Ruby on Rails. Specific technologies we use in Rails a
 
 ### Style Guide
 
-* Use 2 space indentation. Indent with spaces. Configure your text editor to do this.
+* Configure your text editor to:
+  * Use 2 space indentation. Indent with spaces.
+  * Automatically delete trailing whitespace.
 * Comment your code! Don't expect your code to be "so beautiful and readable" that people will understand it.
+* Follow [Github's Ruby Styleguide](https://github.com/styleguide/ruby)
 
 ### Front end
 Front end development technologies:
