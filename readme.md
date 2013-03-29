@@ -20,17 +20,21 @@ Ballistiq uses Git for source control. All our projects are hosted on Github. Al
 
 ## Development Workflow
 
+In general we will try to use [Git Flow](http://nvie.com/posts/a-successful-git-branching-model/). This means that we have 2 branches that are always existent:
+
+1. Master - This is the stable source branch and this is what is used to deploy to Production
+2. Develop - This is what we generally develop on and contains the latest staged changes for customers to review. This is used to deploy to Staging.
+
+### Feature Development Workflow
+
 1. Before starting work on a feature, you must set the corresponding task on Pivotal Tracker to "Started".
-2. The feature should be implemented in a separate git branch named as such: {your initials}-{task id}-{task description}. E.g. "LT-12345-add-comments-to-posts"
+2. Branch off from Develop. The feature should be implemented in a separate git branch named as such: {your initials}-{task id}-{task description}. E.g. "LT-12345-add-comments-to-posts"
 3. When the task is completed, you should mark the task as "Finished" in Pivotal Tracker and also set it to "Deliver".
-4. Get your code reviewed by a colleague. Do a pull request.
+4. Get your code reviewed by a colleague. Do a pull request to the Develop branch.
 5. The reviewer should check the pull request. If it all looks good, just leave a comment saying, "LGTM" (Looks Good To Me) or similar.
-6. After review, the author should then do the merge into master. Rebase your commits  to squash them into one using `git rebase -i origin/master`. Ensure that all tests run before pushing to Github. You should delete the local and remote temporary branch.
+6. After review, the **author** (not the reviewer…unless it's an emergency) should then do the merge into Develop using `git merge --no-ff myfeature`. This squashes all the commits into one. Ensure that all tests run before pushing to origin/develop. You should delete the local and remote temporary branch.
 7. The project lead will Accept/Reject the task on Pivotal Tracker as per client feedback.
-
-### Master branch
-
-The Master branch is expected to be the canonical stable source branch. As such, Master should always strive to be the branch where all tests pass and that the software is stable.
+8. When a feature set is approved, we merge it all into Master, which gets deployed to the production server.
 
 # Web Development Guide
 
@@ -44,7 +48,7 @@ Web app development is in Ruby on Rails. Specific technologies we use in Rails a
 * [Capistrano](https://github.com/capistrano/capistrano) for deployment
 
 
-### Style Guide
+### Ruby Style Guide
 
 * Configure your text editor to:
   * Use 2 space indentation. Indent with spaces.
@@ -59,6 +63,11 @@ Front end development technologies:
 * [SCSS](http://sass-lang.com/)
 * [CoffeeScript](http://coffeescript.org/)
 
+Style guides:
+
+* [Github's Markup Style Guide](https://github.com/styleguide/templates)
+* [Github's CSS Style Guide](https://github.com/styleguide/css)
+* [Github's Javascript Style Guide](https://github.com/styleguide/javascript)
 
 ## Servers
 
@@ -88,7 +97,7 @@ For monitoring, we use:
 
 ### Bootcamp / Basic Training
 
-These training guides provided by Thoughtbot provide an excellent starting point for getting up to speed with everything.
+These training guides provided by [Thoughtbot](https://learn.thoughtbot.com) provide an excellent starting point for getting up to speed with everything. [CodeSchool](http://www.codeschool.com/) is also an excellent resource for learning many of these things.
 
 * [Design](https://learn.thoughtbot.com/design)
 * [Web Design](https://learn.thoughtbot.com/web+design)
