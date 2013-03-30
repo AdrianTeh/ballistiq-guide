@@ -20,10 +20,9 @@ Ballistiq uses Git for source control. All our projects are hosted on Github. Al
 
 ## Development Workflow
 
-In general we will try to use [Git Flow](http://nvie.com/posts/a-successful-git-branching-model/). This means that we have 2 branches that are always existent:
+In general we will try to use [Github Flow](http://scottchacon.com/2011/08/31/github-flow.html).
 
-1. Master - This is the stable source branch and this is what is used to deploy to Production
-2. Develop - This is what we generally develop on and contains the latest staged changes for customers to review. This is used to deploy to Staging.
+The Master branch is stable source branch and is deployable via production branch.
 
 ### Feature Development Workflow
 
