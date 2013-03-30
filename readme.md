@@ -27,13 +27,12 @@ The Master branch is stable source branch and is deployable via production branc
 ### Feature Development Workflow
 
 1. Before starting work on a feature, you must set the corresponding task on Pivotal Tracker to "Started".
-2. Branch off from Develop. The feature should be implemented in a separate git branch named as such: {your initials}-{task id}-{task description}. E.g. "LT-12345-add-comments-to-posts"
-3. When the task is completed, you should mark the task as "Finished" in Pivotal Tracker and also set it to "Deliver".
-4. Get your code reviewed by a colleague. Do a pull request to the Develop branch.
-5. The reviewer should check the pull request. If it all looks good, just leave a comment saying, "LGTM" (Looks Good To Me) or similar.
-6. After review, the **author** (not the reviewer…unless it's an emergency) should then do the merge into Develop using `git merge --no-ff myfeature`. This squashes all the commits into one. Ensure that all tests run before pushing to origin/develop. You should delete the local and remote temporary branch.
-7. The project lead will Accept/Reject the task on Pivotal Tracker as per client feedback.
-8. When a feature set is approved, we merge it all into Master, which gets deployed to the production server.
+2. The feature should be implemented in a separate git branch named as such: {your initials}-{task id}-{task description}. E.g. "LT-12345-add-comments-to-posts"
+When the task is completed, you should mark the task as "Finished" in Pivotal Tracker and also set it to "Deliver".
+3. Get your code reviewed by a colleague. Do a pull request.
+4. The reviewer should check the pull request. If it all looks good, just leave a comment saying, "LGTM" (Looks Good To Me) or similar.
+5. After review, the author should then do the merge into master. Rebase your commits to squash them into one using git rebase -i origin/master. Ensure that all tests run before pushing to Github. You should delete the local and remote temporary branch.
+6. The project lead will Accept/Reject the task on Pivotal Tracker as per client feedback.
 
 # Web Development Guide
 
