@@ -32,7 +32,7 @@ When the task is completed, you should mark the task as "Finished" in Pivotal Tr
 3. Get your code reviewed by a colleague. Do a pull request.
 4. The reviewer should check the pull request. If it all looks good, just leave a comment saying, "LGTM" (Looks Good To Me) or similar.
 5. After review, the **author** (not the reviewer unless there are time constraints) should then do the merge into master. Squash commits `using git merge --no-ff my_branch`. Ensure that all tests run before pushing to Github. You should delete the local and remote temporary branch.
-6. The project lead will Accept/Reject the task on Pivotal Tracker as per client feedback.
+6. The project lead will Accept/Rejectect the task on Pivotal Tracker as per client feedback.
 
 # Web Development Guide
 
@@ -75,7 +75,7 @@ We generally use Amazon EC2 for all our hosting needs. Technologies we use are:
 * [RVM](https://rvm.io/) - Ruby version manager
 * Imagemagick for server side image manipulation
 * [Nginx](http://nginx.org/en/) web server
-* [Phusion Passenger Enterprise](https://www.phusionpassenger.com/)
+* [Phusion Passenger Enterprise](https://www.phusionpassenger.com/), Passenger Community Edition or Unicorn
 * Amazon S3 for file storage
 * Amazon Cloudfront for file delivery
 * Amazon RDS - Mysql cloud hosting
