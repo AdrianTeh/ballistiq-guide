@@ -2,12 +2,12 @@
 
 This guide provides information about how Ballistiq works and our recommended practices for software development.
 
-## Project Management and Collaboration
+## Tracking User Stories, Issues, and Bugs 
 
 Ballistiq uses Basecamp and Pivotal Tracker for collaboration.
 
-* Basecamp - All business issues, client interaction, design, etc.
-* Pivotal Tracker - Software development stories and issue tracking
+* Basecamp - business issues, client collaboration, mockups/designs, etc.
+* Pivotal Tracker - User stories and issue tracking
 
 ## Time Management
 
